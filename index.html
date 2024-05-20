@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Solve your problems</h1>
+    <div class="container">
+    <div class="calculator">
+        <div class="form">
+    <input type="text" id="display">
+        </div>
+        <div class="row1butt">
+         <button onclick="clearDisplay()" class="row1 , grey">AC</button>
+         <button onclick="cutone()" class="row1 , grey" >DC</button>
+         <button onclick="appendToDisplay('.')" class="row1 , grey , bold">.</button>
+         <button onclick="appendToDisplay('/')" class="row1 , orange , bold">/</button>
+    </div>
+    <div class="row1butt">
+        <button onclick="appendToDisplay('7')" class="row1 , lightgrey , bold" id="7">7</button>
+        <button onclick="appendToDisplay('8')" class="row1 , lightgrey , bold">8</button>
+        <button onclick="appendToDisplay('9')" class="row1 , lightgrey , bold">9</button>
+        <button onclick="appendToDisplay('*')" class="row1 , orange , bold">*</button>
+   </div>
+   <div class="row1butt">
+    <button onclick="appendToDisplay('4')" class="row1 , lightgrey , bold">4</button>
+    <button onclick="appendToDisplay('5')" class="row1 , lightgrey , bold">5</button>
+    <button onclick="appendToDisplay('6')" class="row1 , lightgrey , bold">6</button>
+    <button onclick="appendToDisplay('-')" class="row1 , orange , bold">-</button>
+</div>
+<div class="row1butt">
+    <button onclick="appendToDisplay('1')" class="row1 , lightgrey , bold">1</button>
+    <button onclick="appendToDisplay('2')" class="row1 , lightgrey , bold">2</button>
+    <button onclick="appendToDisplay('3')" class="row1 , lightgrey , bold">3</button>
+    <button onclick="appendToDisplay('+')" class="row1 , orange , bold">+</button>
+</div>
+<div class="row1butt">
+    <button onclick="appendToDisplay('0')" class="row1 , lastbutt , lightgrey , bold">0</button>
+    <button onclick="calculate()" class="row1 , orange , bold">=</button>
+</div>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
